@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public final class Main {
 
-  public static void main( String[] args ) throws IOException {
+  public static void main( String[] args ) throws Exception {
 
     Scanner input = ( new Scanner( System.in ) );
     String fileName = ( "" );
@@ -38,7 +38,7 @@ public final class Main {
         fout.close( );
       }
     }
-    catch( IOException e ) {
+    catch( Exception e ) {
 
       System.err.println( "Exception: " + e.getMessage( ) );
       e.printStackTrace( );
